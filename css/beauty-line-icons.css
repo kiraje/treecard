@@ -1,0 +1,362 @@
+/*!
+ * Beauty Line Icons
+ * ------
+ * author: http://kl-webmedia.com/
+ * url: http://graphicriver.net/item/beauty-line-icons/6954442
+ */
+
+@charset "UTF-8";
+
+@font-face {
+  font-family: "beauty-line-icons"; 
+  src:url("../fonts/beauty-line-icons.eot");
+  src:url("../fonts/beauty-line-iconsd41d.eot%3F") format("embedded-opentype"),
+    url("../fonts/beauty-line-icons.woff") format("woff"),
+    url("../fonts/beauty-line-icons.ttf") format("truetype"),
+    url("../fonts/beauty-line-icons.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-klico]:before {
+  font-family: "beauty-line-icons" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="klico-"]:before,
+[class*=" klico-"]:before {
+  font-family: "beauty-line-icons" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.klico-anchor:before {
+  content: "a";
+}
+.klico-arrow-down:before {
+  content: "b";
+}
+.klico-arrow-left:before {
+  content: "c";
+}
+.klico-bag:before {
+  content: "d";
+}
+.klico-brush-2:before {
+  content: "e";
+}
+.klico-arrow-up:before {
+  content: "f";
+}
+.klico-book:before {
+  content: "g";
+}
+.klico-brush:before {
+  content: "h";
+}
+.klico-camera:before {
+  content: "i";
+}
+.klico-cancel:before {
+  content: "j";
+}
+.klico-cart:before {
+  content: "k";
+}
+.klico-cart-accept:before {
+  content: "l";
+}
+.klico-cloud-upload:before {
+  content: "m";
+}
+.klico-cloud-download:before {
+  content: "n";
+}
+.klico-cloud-cancel:before {
+  content: "o";
+}
+.klico-cloud-accept:before {
+  content: "p";
+}
+.klico-cloud:before {
+  content: "q";
+}
+.klico-close:before {
+  content: "r";
+}
+.klico-clock:before {
+  content: "s";
+}
+.klico-check:before {
+  content: "t";
+}
+.klico-chat-02:before {
+  content: "u";
+}
+.klico-chat-01:before {
+  content: "v";
+}
+.klico-cart-plus:before {
+  content: "w";
+}
+.klico-cart-minus:before {
+  content: "x";
+}
+.klico-cart-cancel:before {
+  content: "y";
+}
+.klico-compass:before {
+  content: "z";
+}
+.klico-connect:before {
+  content: "A";
+}
+.klico-code:before {
+  content: "B";
+}
+.klico-download:before {
+  content: "A";
+}
+.klico-drop:before {
+  content: "C";
+}
+.klico-flag:before {
+  content: "D";
+}
+.klico-mouse:before {
+  content: "E";
+}
+.klico-light:before {
+  content: "F";
+}
+.klico-mustache:before {
+  content: "G";
+}
+.klico-phone:before {
+  content: "H";
+}
+.klico-plus:before {
+  content: "I";
+}
+.klico-pocket:before {
+  content: "J";
+}
+.klico-diamond:before {
+  content: "K";
+}
+.klico-connect:before {
+  content: "K";
+}
+.klico-diamond:before {
+  content: "L";
+}
+.klico-lightning:before {
+  content: "M";
+}
+.klico-layers:before {
+  content: "N";
+}
+.klico-laptop:before {
+  content: "O";
+}
+.klico-music:before {
+  content: "P";
+}
+.klico-navigation:before {
+  content: "Q";
+}
+.klico-page:before {
+  content: "R";
+}
+.klico-page-accept:before {
+  content: "S";
+}
+.klico-like:before {
+  content: "T";
+}
+.klico-link:before {
+  content: "U";
+}
+.klico-page-add:before {
+  content: "V";
+}
+.klico-page-arrow-double-left:before {
+  content: "W";
+}
+.klico-location:before {
+  content: "X";
+}
+.klico-education:before {
+  content: "Y";
+}
+.klico-excplanation:before {
+  content: "Z";
+}
+.klico-luck:before {
+  content: "0";
+}
+.klico-gameplay:before {
+  content: "1";
+}
+.klico-heart:before {
+  content: "2";
+}
+.klico-images:before {
+  content: "3";
+}
+.klico-info:before {
+  content: "4";
+}
+.klico-minus:before {
+  content: "5";
+}
+.klico-map:before {
+  content: "6";
+}
+.klico-mail:before {
+  content: "7";
+}
+.klico-magnify:before {
+  content: "8";
+}
+.klico-page-arrow-left:before {
+  content: "9";
+}
+.klico-page-arrow-double-right:before {
+  content: "!";
+}
+.klico-page-arrow-right:before {
+  content: "9";
+}
+.klico-page-arrow-left:before {
+  content: "\"";
+}
+.klico-recorder:before {
+  content: "#";
+}
+.klico-quote-mark:before {
+  content: "$";
+}
+.klico-puzzle:before {
+  content: "%";
+}
+.klico-squared-cancel:before {
+  content: "&";
+}
+.klico-squared-check:before {
+  content: "'";
+}
+.klico-squared-plus:before {
+  content: "(";
+}
+.klico-repeat-endless:before {
+  content: "(";
+}
+.klico-repeat:before {
+  content: ")";
+}
+.klico-page-code:before {
+  content: "*";
+}
+.klico-page-delete:before {
+  content: "+";
+}
+.klico-paperclip:before {
+  content: ",";
+}
+.klico-reply:before {
+  content: "-";
+}
+.klico-repeat-round:before {
+  content: ".";
+}
+.klico-step-back:before {
+  content: "/";
+}
+.klico-tag:before {
+  content: ":";
+}
+.klico-star:before {
+  content: ";";
+}
+.klico-squared-plus:before {
+  content: "<";
+}
+.klico-squared-minus:before {
+  content: "=";
+}
+.klico-view:before {
+  content: ">";
+}
+.klico-user:before {
+  content: "?";
+}
+.klico-upload:before {
+  content: "@";
+}
+.klico-unlimited:before {
+  content: "[";
+}
+.klico-umbrella:before {
+  content: "]";
+}
+.klico-speaker-on:before {
+  content: "^";
+}
+.klico-speaker-off:before {
+  content: "_";
+}
+.klico-trash:before {
+  content: "`";
+}
+.klico-tie:before {
+  content: "{";
+}
+.klico-sidebar:before {
+  content: "|";
+}
+.klico-plane:before {
+  content: "}";
+}
+.klico-settings:before {
+  content: "~";
+}
+.klico-thumbs-down:before {
+  content: "\e000";
+}
+.klico-science:before {
+  content: "\e001";
+}
+.klico-pencil:before {
+  content: "\e002";
+}
+.klico-paperplane:before {
+  content: "\e003";
+}
+.klico-rocket:before {
+  content: "\e004";
+}
+.klico-tape:before {
+  content: "\e005";
+}
+.klico-thumbs-up:before {
+  content: "\e006";
+}
+.klico-arrow-right:before {
+  content: "\\"; /* content: "\e007"; */
+}

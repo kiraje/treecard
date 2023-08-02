@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+   <head>
+      <meta charset="utf-8">    
+      
+      <title>TreeCardGames - Chrome web store games</title>
+      <meta name="description" content="Chrome web store games">
+      <meta name="keywords" content="solitaire, klondike, classic solitaire, freecell, spider, mahjong, sudoku, word search, bubble shooter, hearts, spades, gin rummy, match 3, match pairs, memory games, words from letters">      
+           
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+     
+      <link rel="stylesheet" href="css/main.mind401.css">
+      <link id="main-style" rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+
+      <link rel="stylesheet" href="css/beauty-line-icons.css">
+      
+	  <script src="https://www.google.com/recaptcha/api.js"></script>
+	  
+	  <!-- <link rel="shortcut icon" href="/img/favicon.png"> -->
+
+      <!-- Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) -->
+      <script type="text/javascript" async=true>
+         (function() {
+         var host = window.location.hostname;
+         var element = document.createElement('script');
+         var firstScript = document.getElementsByTagName('script')[0];
+         var url = 'https://cmp.quantcast.com'
+            .concat('/choice/', 'E2FD42ekzC6Vt', '/', host, '/choice.js?tag_version=V2');
+         var uspTries = 0;
+         var uspTriesLimit = 3;
+         element.async = true;
+         element.type = 'text/javascript';
+         element.src = url;
+         
+         firstScript.parentNode.insertBefore(element, firstScript);
+         
+         function makeStub() {
+            var TCF_LOCATOR_NAME = '__tcfapiLocator';
+            var queue = [];
+            var win = window;
+            var cmpFrame;
+         
+            function addFrame() {
+               var doc = win.document;
+               var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+         
+               if (!otherCMP) {
+               if (doc.body) {
+                  var iframe = doc.createElement('iframe');
+         
+                  iframe.style.cssText = 'display:none';
+                  iframe.name = TCF_LOCATOR_NAME;
+                  doc.body.appendChild(iframe);
+               } else {
+                  setTimeout(addFrame, 5);
+               }
+               }
+               return !otherCMP;
+            }
+         
+            function tcfAPIHandler() {
+               var gdprApplies;
+               var args = arguments;
+         
+               if (!args.length) {
+               return queue;
+               } else if (args[0] === 'setGdprApplies') {
+               if (
+                  args.length > 3 &&
+                  args[2] === 2 &&
+                  typeof args[3] === 'boolean'
+               ) {
+                  gdprApplies = args[3];
+                  if (typeof args[2] === 'function') {
+                     args[2]('set', true);
+                  }
+               }
+               } else if (args[0] === 'ping') {
+               var retr = {
+                  gdprApplies: gdprApplies,
+                  cmpLoaded: false,
+                  cmpStatus: 'stub'
+               };
+         
+               if (typeof args[2] === 'function') {
+                  args[2](retr);
+               }
+               } else {
+               if(args[0] === 'init' && typeof args[3] === 'object') {
+                  args[3] = Object.assign(args[3], { tag_version: 'V2' });
+               }
+               queue.push(args);
+               }
+            }
+         
+            function postMessageEventHandler(event) {
+               var msgIsString = typeof event.data === 'string';
+               var json = {};
+         
+               try {
+               if (msgIsString) {
+                  json = JSON.parse(event.data);
+               } else {
+                  json = event.data;
+               }
+               } catch (ignore) {}
+         
+               var payload = json.__tcfapiCall;
+         
+               if (payload) {
+               window.__tcfapi(
+                  payload.command,
+                  payload.version,
+                  function(retValue, success) {
+                     var returnMsg = {
+                     __tcfapiReturn: {
+                        returnValue: retValue,
+                        success: success,
+                        callId: payload.callId
+                     }
+                     };
+                     if (msgIsString) {
+                     returnMsg = JSON.stringify(returnMsg);
+                     }
+                     if (event && event.source && event.source.postMessage) {
+                     event.source.postMessage(returnMsg, '*');
+                     }
+                  },
+                  payload.parameter
+               );
+               }
+            }
+         
+            while (win) {
+               try {
+               if (win.frames[TCF_LOCATOR_NAME]) {
+                  cmpFrame = win;
+                  break;
+               }
+               } catch (ignore) {}
+         
+               if (win === window.top) {
+               break;
+               }
+               win = win.parent;
+            }
+            if (!cmpFrame) {
+               addFrame();
+               win.__tcfapi = tcfAPIHandler;
+               win.addEventListener('message', postMessageEventHandler, false);
+            }
+         };
+         
+         makeStub();
+         
+         var uspStubFunction = function() {
+            var arg = arguments;
+            if (typeof window.__uspapi !== uspStubFunction) {
+               setTimeout(function() {
+               if (typeof window.__uspapi !== 'undefined') {
+                  window.__uspapi.apply(window.__uspapi, arg);
+               }
+               }, 500);
+            }
+         };
+         
+         var checkIfUspIsReady = function() {
+            uspTries++;
+            if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+               console.warn('USP is not accessible');
+            } else {
+               clearInterval(uspInterval);
+            }
+         };
+         
+         if (typeof window.__uspapi === 'undefined') {
+            window.__uspapi = uspStubFunction;
+            var uspInterval = setInterval(checkIfUspIsReady, 6000);
+         }
+         })();
+         </script>
+      <!-- End Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) -->
+
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway%3A400%2C700%2C600&amp;ver=1.0.4">      
+
+   </head>
+
+   <body class="page">
+      
+      <header class="banner navbar navbar-default navbar-fixed-top" role="banner">
+         <div class="container">
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle" id="showRightPush"><i class="klico-sidebar"></i></button>
+               <a class="navbar-brand" href="news.htm">
+               <img src="img/logo/tcg-header.png" alt="TreeCardGames"/>
+               </a>
+            </div>
+            <nav class="collapse navbar-collapse" role="navigation">
+               <ul id="menu-primary-navigation" class="nav navbar-nav">
+                  <li class="menu-home"><a href="buy.htm">Buy Now!</a></li>   
+                  <li class="menu-home"><a href="games_windows.htm">Our Games</a></li>                  
+                  <li class="menu-home"><a href="support.htm">Support</a></li>
+                  <li class="menu-home"><a href="wn/news.htm">What's New</a></li>                                                                       
+            </nav>
+         </div>
+      </header>
+
+
+        <div class="style-switcher">
+            <div class="style-container">
+                <input class="current-color form-input"> <br>
+            </div>
+        </div>
+
+      <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2" data-title="Sidebar menu"></nav>
+      <div class="page-header">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-6">
+                  <h1>Chrome Web Store Games</h1>
+               </div>
+               <div class="col-sm-6 text-right">
+                  <ol class="breadcrumb">
+                     <li><a href="index.htm">Home</a></li>
+                     <li class="active">Our Games</li>
+                  </ol>
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      
+      <div class="wrap container" role="document">
+         <div class="content row">
+            <div class="main col-sm-12" role="main">
+               <section class="project-list-inside-container">
+                  <nav class="filter" id="isotope-filter">
+                     <strong>Filter</strong>
+                     <a href="games_windows.htm" class='btn btn-default' style="margin-left: 15px;">Windows</a>                     
+                     <a href="games_windows_free.htm" class='btn btn-default' style="margin-left: 15px;">Free Windows Games</a>
+                     <a href="games_windows_store.htm" class='btn btn-default' style="margin-left: 10px;">Microsoft Store Games</a>                     
+                     <a href="games_browser.htm" class='btn btn-default' style="margin-left: 10px;">Online Games</a>                                     
+                     <a href="games_chrome_web_store.htm" class='btn btn-orange' style="margin-left: 10px;">Chrome Web Store</a> 
+                  </nav>
+               </section>
+            </div>
+            <!-- /.main -->
+         </div>
+         <!-- /.content -->
+      </div>
+      
+      
+      <section class="service-list">      
+         <div class="container">                    
+            <div class="row text-center sized">
+               <div class="col-md-6 col-sm-12 col-xs-12 item">
+                  <div class="sizer-item">
+                     <a href="https://chrome.google.com/webstore/detail/solitaire/lkbhppfbabandkdmgjmifahoabeodiep" target="_blank"> <img src="img/games/chrome/solitaire-frame.jpg" class="attachment-large wp-post-image"></a>                     
+                     <div class="descriptionTitle"><a href="https://chrome.google.com/webstore/detail/solitaire/lkbhppfbabandkdmgjmifahoabeodiep" target="_blank">Solitaire</a></div>                     
+                     <!-- <div class="descriptionExtended2">Free collection that allows you to play 12 challenging Solitaire Games</div> -->
+                     <p style="font-size:12px;margin-top:5px">Free collection that allows you to play 12 challenging Solitaire Games</p>
+                     <img src="img/badges/ChromeWebStore_Badge.png" width="200" class="attachment-200x46 wp-post-image" alt=""/>  <a class="btn btn-blue btn-lg" href="https://chrome.google.com/webstore/detail/solitaire/lkbhppfbabandkdmgjmifahoabeodiep" target="_blank">Add to Chrome</a>                                           
+                  </div>
+               </div>
+               <div class="col-md-6 col-sm-12 col-xs-12 item">
+                  <div class="sizer-item">
+                     <a href="https://chrome.google.com/webstore/detail/freecell/loaecokofmdgccldeaacoakfninhoboe" target="_blank"> <img src="img/games/chrome/freecell-solitaire-frame.jpg" class="attachment-large wp-post-image"></a>                     
+                     <div class="descriptionTitle"><a href="https://chrome.google.com/webstore/detail/freecell/loaecokofmdgccldeaacoakfninhoboe" target="_blank">FreeCell</a></div>                     
+                     <!-- <div class="descriptionExtended2">FreeCell is a 100% free collection that allows you to play 4 FreeCell Solitaire games</div> -->
+                     <p style="font-size:12px;margin-top:5px">FreeCell is a 100% free collection that allows you to play 4 FreeCell Solitaire games</p>
+                     <img src="img/badges/ChromeWebStore_Badge.png" width="200" class="attachment-200x46 wp-post-image" alt=""/>  <a class="btn btn-blue btn-lg" href="https://chrome.google.com/webstore/detail/freecell/loaecokofmdgccldeaacoakfninhoboe" target="_blank">Add to Chrome</a>                                           
+                  </div>
+               </div>
+               <div class="col-md-6 col-sm-12 col-xs-12 item">
+                  <div class="sizer-item">
+                     <a href="https://chrome.google.com/webstore/detail/spider-solitaire/opmmifamlflphgpapoddpfghobgnagek" target="_blank"> <img src="img/games/chrome/spider-solitaire-frame.jpg" class="attachment-large wp-post-image"></a>                     
+                     <div class="descriptionTitle"><a href="https://chrome.google.com/webstore/detail/spider-solitaire/opmmifamlflphgpapoddpfghobgnagek" target="_blank">Spider Solitaire</a></div>                     
+                     <!-- <div class="descriptionExtended2">Play in your browser a beautiful collection of Spider solitaire games!</div> -->
+                     <p style="font-size:12px;margin-top:5px">Play in your browser a beautiful collection of Spider solitaire games!</p>
+                     <img src="img/badges/ChromeWebStore_Badge.png" width="200" class="attachment-200x46 wp-post-image" alt=""/>  <a class="btn btn-blue btn-lg" href="https://chrome.google.com/webstore/detail/spider-solitaire/opmmifamlflphgpapoddpfghobgnagek" target="_blank">Add to Chrome</a>                                           
+                  </div>
+               </div>
+               <div class="col-md-6 col-sm-12 col-xs-12 item">
+                  <div class="sizer-item">
+                     <a href="https://chrome.google.com/webstore/detail/klondike-solitaire/dhcjgoipbmaoifknmcdcdhpoggnhjpbf" target="_blank"> <img src="img/games/chrome/klondike-solitaire-frame.jpg" class="attachment-large wp-post-image"></a>                     
+                     <div class="descriptionTitle"><a href="https://chrome.google.com/webstore/detail/klondike-solitaire/dhcjgoipbmaoifknmcdcdhpoggnhjpbf" target="_blank">Klondike Solitaire</a></div>                     
+                     <!-- <div class="descriptionExtended2">Play in your Chromebook a beautiful Klondike solitaire games collection!</div> -->
+                     <p style="font-size:12px;margin-top:5px">Play in your Chromebook a beautiful Klondike solitaire games collection!</p>
+                     <img src="img/badges/ChromeWebStore_Badge.png" width="200" class="attachment-200x46 wp-post-image" alt=""/>  <a class="btn btn-blue btn-lg" href="https://chrome.google.com/webstore/detail/klondike-solitaire/dhcjgoipbmaoifknmcdcdhpoggnhjpbf" target="_blank">Add to Chrome</a>                                           
+                  </div>
+               </div>
+               <div class="col-md-6 col-sm-12 col-xs-12 item">
+                  <div class="sizer-item">
+                     <a href="https://chrome.google.com/webstore/detail/solitaire-games/bmfmccmloeoabkbgidmhjpdonhbnjfjh" target="_blank"> <img src="img/games/chrome/solitaire-games-frame.jpg" class="attachment-large wp-post-image"></a>                     
+                     <div class="descriptionTitle"><a href="https://chrome.google.com/webstore/detail/solitaire-games/bmfmccmloeoabkbgidmhjpdonhbnjfjh" target="_blank">Solitaire Games</a></div>                     
+                     <!-- <div class="descriptionExtended2">Play a beautiful collection of your favorite solitaire games: Klondike, FreeCell, Spider, Scorpion, Pyramid and many others!</div> -->
+                     <p style="font-size:12px;margin-top:5px">Play a beautiful collection of your favorite solitaire games!</p>
+                     <img src="img/badges/ChromeWebStore_Badge.png" width="200" class="attachment-200x46 wp-post-image" alt=""/>  <a class="btn btn-blue btn-lg" href="https://chrome.google.com/webstore/detail/solitaire-games/bmfmccmloeoabkbgidmhjpdonhbnjfjh" target="_blank">Add to Chrome</a>                                           
+                  </div>
+               </div>
+               <div class="col-md-6 col-sm-12 col-xs-12 item">
+                  <div class="sizer-item">
+                     <a href="https://chrome.google.com/webstore/detail/pyramid-solitaire/agopoomfmkgjpkdjpmfhbcpmcjiomglo" target="_blank"> <img src="img/games/chrome/pyramid-solitaire-frame.jpg" class="attachment-large wp-post-image"></a>                     
+                     <div class="descriptionTitle"><a href="https://chrome.google.com/webstore/detail/pyramid-solitaire/agopoomfmkgjpkdjpmfhbcpmcjiomglo" target="_blank">Pyramid Solitaire</a></div>                     
+                     <!-- <div class="descriptionExtended2">Play two free beautiful Pyramid solitaire game variations!</div> -->
+                     <p style="font-size:12px;margin-top:5px">Play two free beautiful Pyramid solitaire game variations!</p>
+                     <img src="img/badges/ChromeWebStore_Badge.png" width="200" class="attachment-200x46 wp-post-image" alt=""/>  <a class="btn btn-blue btn-lg" href="https://chrome.google.com/webstore/detail/pyramid-solitaire/agopoomfmkgjpkdjpmfhbcpmcjiomglo" target="_blank">Add to Chrome</a>                                           
+                  </div>
+               </div>  
+               <div class="col-md-6 col-sm-12 col-xs-12 item">
+                  <div class="sizer-item">
+                     <a href="https://chrome.google.com/webstore/detail/hearts/mjcljjibjagdafhmblbndhfoomicemop" target="_blank"> <img src="img/games/chrome/hearts-frame.jpg" class="attachment-large wp-post-image"></a>                     
+                     <div class="descriptionTitle"><a href="https://chrome.google.com/webstore/detail/hearts/mjcljjibjagdafhmblbndhfoomicemop" target="_blank">Hearts</a></div>                     
+                     <!-- <div class="descriptionExtended2">Use your best strategy and card counting skills to make your opponents 'Shoot the Moon'!</div> -->
+                     <p style="font-size:12px;margin-top:5px">Use your best strategy and card counting skills to make your opponents 'Shoot the Moon'!</p>
+                     <img src="img/badges/ChromeWebStore_Badge.png" width="200" class="attachment-200x46 wp-post-image" alt=""/>  <a class="btn btn-blue btn-lg" href="https://chrome.google.com/webstore/detail/hearts/mjcljjibjagdafhmblbndhfoomicemop" target="_blank">Add to Chrome</a>                                           
+                  </div>
+               </div>
+               <div class="col-md-6 col-sm-12 col-xs-12 item">
+                  <div class="sizer-item">
+                     <a href="https://chrome.google.com/webstore/detail/spades/mjjbjhaeodcjcndknhkcobkmaedgofbj" target="_blank"> <img src="img/games/chrome/spades-frame.jpg" class="attachment-large wp-post-image"></a>                     
+                     <div class="descriptionTitle"><a href="https://chrome.google.com/webstore/detail/spades/mjjbjhaeodcjcndknhkcobkmaedgofbj" target="_blank">Spades</a></div>                     
+                     <!-- <div class="descriptionExtended2">Play in couples and use your best strategy to win at least the number of tricks bid in each hand!</div> -->
+                     <p style="font-size:12px;margin-top:5px">Play in couples and use your best strategy to win at least the number of tricks bid in each hand!</p>
+                     <img src="img/badges/ChromeWebStore_Badge.png" width="200" class="attachment-200x46 wp-post-image" alt=""/>  <a class="btn btn-blue btn-lg" href="https://chrome.google.com/webstore/detail/spades/mjjbjhaeodcjcndknhkcobkmaedgofbj" target="_blank">Add to Chrome</a>                                           
+                  </div>
+               </div>
+               <div class="col-md-6 col-sm-12 col-xs-12 item">
+                  <div class="sizer-item">
+                     <a href="https://chrome.google.com/webstore/detail/gin-rummy/ckoiipokifpjhhkeegikiljbnpcnhiip" target="_blank"> <img src="img/games/chrome/gin-rummy-frame.jpg" class="attachment-large wp-post-image"></a>                     
+                     <div class="descriptionTitle"><a href="https://chrome.google.com/webstore/detail/gin-rummy/ckoiipokifpjhhkeegikiljbnpcnhiip" target="_blank">Gin Rummy</a></div>                     
+                     <!-- <div class="descriptionExtended2">Gin Rummy is a fun and modern version of the famous 'draw and discard' card game!</div> -->
+                     <p style="font-size:12px;margin-top:5px">Gin Rummy is a fun and modern version of the famous 'draw and discard' card game!</p>
+                     <img src="img/badges/ChromeWebStore_Badge.png" width="200" class="attachment-200x46 wp-post-image" alt=""/>  <a class="btn btn-blue btn-lg" href="https://chrome.google.com/webstore/detail/gin-rummy/ckoiipokifpjhhkeegikiljbnpcnhiip" target="_blank">Add to Chrome</a>                                           
+                  </div>
+               </div>
+               <div class="col-md-6 col-sm-12 col-xs-12 item">
+                  <div class="sizer-item">
+                     <a href="https://chrome.google.com/webstore/detail/mahjong/lglhgjgcgcgdbpohkpmceihbcanjcenk" target="_blank"> <img src="img/games/chrome/mahjong-frame.jpg" class="attachment-large wp-post-image"></a>                     
+                     <div class="descriptionTitle"><a href="https://chrome.google.com/webstore/detail/mahjong/lglhgjgcgcgdbpohkpmceihbcanjcenk" target="_blank">Mahjong</a></div>                     
+                     <!-- <div class="descriptionExtended2">MahJong is a high-quality collection of mahjong solitaire games!</div> -->
+                     <p style="font-size:12px;margin-top:5px">MahJong is a high-quality collection of mahjong solitaire games!</p>
+                     <img src="img/badges/ChromeWebStore_Badge.png" width="200" class="attachment-200x46 wp-post-image" alt=""/>  <a class="btn btn-blue btn-lg" href="https://chrome.google.com/webstore/detail/mahjong/lglhgjgcgcgdbpohkpmceihbcanjcenk" target="_blank">Add to Chrome</a>                                           
+                  </div>
+               </div>
+               <div class="col-md-6 col-sm-12 col-xs-12 item">
+                  <div class="sizer-item">
+                     <a href="https://chrome.google.com/webstore/detail/word-search/lcfbgihefickaapnekhmnajcpceainbp" target="_blank"> <img src="img/games/chrome/word-search-frame.jpg" class="attachment-large wp-post-image"></a>                     
+                     <div class="descriptionTitle"><a href="https://chrome.google.com/webstore/detail/word-search/lcfbgihefickaapnekhmnajcpceainbp" target="_blank">Word Search</a></div>                     
+                     <!-- <div class="descriptionExtended2">Word Search is a beautiful app that offers an endless number of word puzzles!</div> -->
+                     <p style="font-size:12px;margin-top:5px">Word Search is a beautiful app that offers an endless number of word puzzles!</p>
+                     <img src="img/badges/ChromeWebStore_Badge.png" width="200" class="attachment-200x46 wp-post-image" alt=""/>  <a class="btn btn-blue btn-lg" href="https://chrome.google.com/webstore/detail/word-search/lcfbgihefickaapnekhmnajcpceainbp" target="_blank">Add to Chrome</a>                                           
+                  </div>
+               </div>
+               <div class="col-md-6 col-sm-12 col-xs-12 item">
+                  <div class="sizer-item">
+                     <a href="https://chrome.google.com/webstore/detail/sudoku/bhbpfmehcdkljokoekegjpemglkmnman" target="_blank"> <img src="img/games/chrome/sudoku-frame.jpg" class="attachment-large wp-post-image"></a>                     
+                     <div class="descriptionTitle"><a href="https://chrome.google.com/webstore/detail/sudoku/bhbpfmehcdkljokoekegjpemglkmnman" target="_blank">Sudoku</a></div>                     
+                     <!-- <div class="descriptionExtended2">With Sudoku you can play millions of Sudoku puzzles completely free!</div> -->
+                     <p style="font-size:12px;margin-top:5px">With Sudoku you can play millions of Sudoku puzzles completely free!</p>
+                     <img src="img/badges/ChromeWebStore_Badge.png" width="200" class="attachment-200x46 wp-post-image" alt=""/>  <a class="btn btn-blue btn-lg" href="https://chrome.google.com/webstore/detail/sudoku/bhbpfmehcdkljokoekegjpemglkmnman" target="_blank">Add to Chrome</a>                                           
+                  </div>
+               </div>
+               <div class="col-md-6 col-sm-12 col-xs-12 item">
+                  <div class="sizer-item">
+                     <a href="https://chrome.google.com/webstore/detail/christmas-time-solitaire/dijbepjhnbemlkankfdenhghjikmhhfk" target="_blank"> <img src="img/games/chrome/christmas-time-solitaire-frame.jpg" class="attachment-large wp-post-image"></a>                     
+                     <div class="descriptionTitle"><a href="https://chrome.google.com/webstore/detail/christmas-time-solitaire/dijbepjhnbemlkankfdenhghjikmhhfk" target="_blank">Christmas Time Solitaire</a></div>                     
+                     <!-- <div class="descriptionExtended2">A beautiful collection of solitaire games with Christmas theme!</div> -->
+                     <p style="font-size:12px;margin-top:5px">A beautiful collection of solitaire games with Christmas theme!</p>
+                     <img src="img/badges/ChromeWebStore_Badge.png" width="200" class="attachment-200x46 wp-post-image" alt=""/>  <a class="btn btn-blue btn-lg" href="https://chrome.google.com/webstore/detail/christmas-time-solitaire/dijbepjhnbemlkankfdenhghjikmhhfk" target="_blank">Add to Chrome</a>                                           
+                  </div>
+               </div>
+               <div class="col-md-6 col-sm-12 col-xs-12 item">
+                  <div class="sizer-item">
+                     <a href="https://chrome.google.com/webstore/detail/most-difficult-solitaire/hcngaghppefdjiikgbfocomkackfmobb" target="_blank"> <img src="img/games/chrome/most-difficult-solitaire-games-frame.jpg" class="attachment-large wp-post-image"></a>                     
+                     <div class="descriptionTitle"><a href="https://chrome.google.com/webstore/detail/most-difficult-solitaire/hcngaghppefdjiikgbfocomkackfmobb" target="_blank">Most Difficult Solitaire Games</a></div>                     
+                     <!-- <div class="descriptionExtended2">Four of the Most Difficult Solitaire Games in the World</div> -->
+                     <p style="font-size:12px;margin-top:5px">Four of the Most Difficult Solitaire Games in the World</p>
+                     <img src="img/badges/ChromeWebStore_Badge.png" width="200" class="attachment-200x46 wp-post-image" alt=""/>  <a class="btn btn-blue btn-lg" href="https://chrome.google.com/webstore/detail/most-difficult-solitaire/hcngaghppefdjiikgbfocomkackfmobb" target="_blank">Add to Chrome</a>                                           
+                  </div>
+               </div>
+               <div class="col-md-6 col-sm-12 col-xs-12 item">
+                  <div class="sizer-item">
+                     <a href="https://chrome.google.com/webstore/detail/bubble-shooter/kofilmfchaehdpcoojodehhbkfoijfhi" target="_blank"> <img src="img/games/chrome/bubble-shooter-frame.jpg" class="attachment-large wp-post-image"></a>                     
+                     <div class="descriptionTitle"><a href="https://chrome.google.com/webstore/detail/bubble-shooter/kofilmfchaehdpcoojodehhbkfoijfhi" target="_blank">Bubble Shooter</a></div>                     
+                     <!-- <div class="descriptionExtended2">Bubble Shooter is a quick and entertaining app for all the family!</div> -->
+                     <p style="font-size:12px;margin-top:5px">Bubble Shooter is a quick and entertaining app for all the family!</p>
+                     <img src="img/badges/ChromeWebStore_Badge.png" width="200" class="attachment-200x46 wp-post-image" alt=""/>  <a class="btn btn-blue btn-lg" href="https://chrome.google.com/webstore/detail/bubble-shooter/kofilmfchaehdpcoojodehhbkfoijfhi" target="_blank">Add to Chrome</a>                                           
+                  </div>
+               </div>
+               <div class="col-md-6 col-sm-12 col-xs-12 item">
+                  <div class="sizer-item">
+                     <a href="https://chrome.google.com/webstore/detail/words-from-letters/bmndinkbkmakkhpnelhfflakgafmkmge" target="_blank"> <img src="img/games/chrome/words-from-letters-frame.jpg" class="attachment-large wp-post-image"></a>                     
+                     <div class="descriptionTitle"><a href="https://chrome.google.com/webstore/detail/words-from-letters/bmndinkbkmakkhpnelhfflakgafmkmge" target="_blank">Words from Letters</a></div>                     
+                     <!-- <div class="descriptionExtended2">Test your vocabulary skills and learn new words at the same time with this entertaining game.</div> -->
+                     <p style="font-size:12px;margin-top:5px">Test your vocabulary skills and learn new words at the same time with this entertaining game.</p>
+                     <img src="img/badges/ChromeWebStore_Badge.png" width="200" class="attachment-200x46 wp-post-image" alt=""/>  <a class="btn btn-blue btn-lg" href="https://chrome.google.com/webstore/detail/words-from-letters/bmndinkbkmakkhpnelhfflakgafmkmge" target="_blank">Add to Chrome</a>                                           
+                  </div>
+               </div>
+               <div class="col-md-6 col-sm-12 col-xs-12 item">
+                  <div class="sizer-item">
+                     <a href="https://chrome.google.com/webstore/detail/match-pairs/mgkkfnmcmahfdfanopbnlioimcoincoi" target="_blank"> <img src="img/games/chrome/match-pairs-frame.jpg" class="attachment-large wp-post-image"></a>                     
+                     <div class="descriptionTitle"><a href="https://chrome.google.com/webstore/detail/match-pairs/mgkkfnmcmahfdfanopbnlioimcoincoi" target="_blank">Match Pairs</a></div>                     
+                     <!-- <div class="descriptionExtended2">Match Pairs is a free and charming game that everyone can play for hours and hours straight.</div> -->
+                     <p style="font-size:12px;margin-top:5px">Match Pairs is a free and charming game that everyone can play for hours and hours straight.</p>
+                     <img src="img/badges/ChromeWebStore_Badge.png" width="200" class="attachment-200x46 wp-post-image" alt=""/>  <a class="btn btn-blue btn-lg" href="https://chrome.google.com/webstore/detail/match-pairs/mgkkfnmcmahfdfanopbnlioimcoincoi" target="_blank">Add to Chrome</a>                                           
+                  </div>
+               </div>
+               <div class="col-md-6 col-sm-12 col-xs-12 item">
+                  <div class="sizer-item">
+                     <a href="https://chrome.google.com/webstore/detail/match-3/pmkmnpkpidolhcdiifbnljebkbflpfno" target="_blank"> <img src="img/games/chrome/match3-frame.jpg" class="attachment-large wp-post-image"></a>                     
+                     <div class="descriptionTitle"><a href="https://chrome.google.com/webstore/detail/match-3/pmkmnpkpidolhcdiifbnljebkbflpfno" target="_blank">Match3</a></div>                     
+                     <!-- <div class="descriptionExtended2">Match 3 is a fun and entertaining matching game for all the family!</div> -->
+                     <p style="font-size:12px;margin-top:5px">Match3 is a fun and entertaining matching game for all the family!</p>
+                     <img src="img/badges/ChromeWebStore_Badge.png" width="200" class="attachment-200x46 wp-post-image" alt=""/>  <a class="btn btn-blue btn-lg" href="https://chrome.google.com/webstore/detail/match-3/pmkmnpkpidolhcdiifbnljebkbflpfno" target="_blank">Add to Chrome</a>                                           
+                  </div>
+               </div>
+            </div>               
+            <div class="row text-center sized">
+               <!-- <div class="col-md-6 col-sm-12 col-xs-12 item"> -->
+               <!-- </div> -->
+            </div>                           
+         </div>
+      </section>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <!-- Footer -->
+      <footer class="content-info" role="contentinfo">
+         <div class="container">
+            <div class="row widgets">
+               <div class="col-md-3 col-sm-6">
+                  <section class="widget text-2 widget_text">
+                     <h3>About us</h3>
+                     <div class="textwidget"><img src="img/logo/tcg-footer.png" width="220" alt="">
+                     <br>
+                     <div class="text-no-spaces"><p>TreeCardGames develops exclusive games with your fun in mind!</p></div>
+                     <a href="contact.htm"><strong>Contact Us</strong></a>
+                     <br>
+                     <a href="awards.htm"><strong>Awards</strong></a>
+                     <br>
+                     <a href="newsletter.htm"><strong>Free Newsletter</strong></a>                     
+                     <br>
+					 <a href="what_our_customers_say.htm"><strong>What our customers say...</strong></a>                    
+                     <br>
+                     <a href="privacy/en/privacy.htm"><strong>Privacy Policy</strong></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     <a href="terms/terms.htm"><strong>Terms of Use</strong></a>
+                     </div>
+                  </section>
+               </div>
+               <div class="col-md-3 col-sm-6">                                  
+                  <section class="widget tag_cloud-2 widget_tag_cloud">
+                    <h3>Free Online Games!</h3>
+                     <div class="tagcloud">
+                        <a href="https://www.netsolitaire.com" target="_blank" class='btn btn-light tag' >Solitaire Games</a>
+                        <a href="https://www.free-spider-solitaire.com" target="_blank" class='btn btn-light tag' >Spider Solitaire</a>
+                        <a href="https://www.free-freecell-solitaire.com" target="_blank" class='btn btn-light tag' >FreeCell Solitaire</a>
+                        <a href="https://www.solitaire-klondike.com" target="_blank" class='btn btn-light tag' >Klondike Solitaire</a>
+                        <a href="https://www.free-play-mahjong.com" target="_blank" class='btn btn-light tag' >MahJong</a>                                                                        
+                     </div>                    
+                  </section>                  
+               </div>
+               <div class="col-md-3 col-sm-6">
+                  <section class="widget tag_cloud-2 widget_tag_cloud">
+                     <h3>Our Sites</h3>
+                     <div class="tagcloud">
+                        <a href="https://www.solsuite.com" target="_blank" class='btn btn-light tag' >SolSuite Solitaire</a>
+                        <a href="https://www.mahjongsuite.com" target="_blank" class='btn btn-light tag' >MahJong Suite</a>
+                        <a href="https://www.sudokuup.com" target="_blank" class='btn btn-light tag' >Sudoku Up</a>
+                        <a href="https://www.solitaire-spider.com" target="_blank" class='btn btn-light tag' >Spider Solitaire</a>                        
+                        <a href="https://www.solitaire-freecell.com" target="_blank" class='btn btn-light tag' >FreeCell</a>                                                                        
+                        <a href="https://www.123freesolitaire.com" target="_blank" class='btn btn-light tag' >123 Free Solitaire</a>
+                     </div>
+                  </section>
+               </div>
+               <div class="col-md-3 col-sm-6">
+                  <section class="widget social-4 widget_social">
+                     <h3>Keep in touch!</h3>
+                     <b>We are social</b>
+                     <div class="row">
+                        <div class="col-xs-2 text-center"><a href="https://www.facebook.com/123FreeSolitaire" rel="nofollow" target="_blank" title="Facebook"><img src="img/social-icon/facebook.png" title="Like us on Facebook!" ></a></div>
+                        <div class="col-xs-2 text-center"><a href="https://treecardgames.blogspot.com" rel="nofollow" target="_blank" title="TreeCardGames Blog"><img src="img/social-icon/blogger.png" alt="TreeCardGames Blog" ></a></div>
+                        <div class="col-xs-2 text-center"><a href="https://twitter.com/treecardgames" rel="nofollow" target="_blank" title="Twitter"><img src="img/social-icon/twitter.png" alt="Twitter" ></a></div>
+                        <div class="col-xs-2 text-center"><a href="https://www.youtube.com/user/treecardgames" rel="nofollow" target="_blank" title="YouTube"><img src="img/social-icon/youtube.png" alt="YouTube" ></a></div> 
+                        <div class="col-xs-2 text-center"><a href="https://www.pinterest.com/treecardgames" rel="nofollow" target="_blank" title="Pinterest"><img src="img/social-icon/pinterest.png" alt="Pinterest" ></a></div>
+                        <div class="col-xs-2 text-center"><a href="https://www.instagram.com/treecardgames" rel="nofollow" target="_blank" title="Instagram"><img src="img/social-icon/instagram.png" alt="Instagram" ></a></div>
+                     
+                    <script Language="JavaScript" Type="text/javascript">
+                    function FormNewsBottom_Validator(theForm) {                             
+                      if (theForm.email_footer.value == "") {
+                        alert("Please enter a value for the \"Email\" field.");
+                        theForm.email_footer.focus();
+                        return (false);
+                      }
+
+                      if (theForm.email_footer.value.length < 6) {
+                        alert("Please enter at least 6 characters in the \"Email\" field.");
+                        theForm.email_footer.focus();
+                        return (false);
+                      }                             
+                      return (true);
+                    }
+                    </script>        
+                    
+                  <br>  
+                  <section class="widget text-2 widget_text" style="margin-left: 0px;">   
+                     
+                    <form METHOD="POST" ACTION="https://www.treecardgames.com/php/news-footer.php" onsubmit="return FormNewsBottom_Validator(this)" name="Form1" language="JavaScript" class="wpcf7-form" id="news-footer">
+                    <input type="hidden" name="success" value="https://www.treecardgames.com/newsletter2.htm">
+                     
+                        <div class="textwidget">
+                            <b>Subscribe</b> to our free newsletter to receive updates and offers:<br>
+                            <p><span class="wpcf7-form-control-wrap your-email"><input type="email" name="email_footer" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email address" /></span></p>
+                            
+							<p><div class="g-recaptcha" data-sitekey="6LeTAvIZAAAAAKFQT5f65IV7w8p5eShJOw6cB7du"></div></p>
+							
+							<p><input type="submit" value="Subscribe" class="wpcf7-form-control btn btn-light" /></p>
+                            <div class="wpcf7-response-output wpcf7-display-none"></div>
+                        </div>                                         
+                     
+                    </form>                                        
+                  </div>                      
+                  </section>                  
+               </div>
+            </div>
+            <div class="text-center copyright">
+               Copyright © 1998-2023 <a href="news.htm"><strong>TreeCardGames</strong></a> | All rights reserved 
+            </div>
+         </div>
+      </footer>
+      <script src='https://code.jquery.com/jquery-1.11.1.min.js'></script>
+      <script src="js/owl.carousel.js"></script>
+      <script src="js/scripts.js"></script>
+      <script src='js/main.js%3Fver=1.0.4'></script>
+	  
+	  <script>
+      document.getElementById("news-footer").addEventListener("submit", function(event) {
+		   var recaptcha = $("#g-recaptcha-response").val();
+		   if (recaptcha === "") {
+			  event.preventDefault();
+			  alert("Please check the reCAPTCHA");
+		   }
+		});
+      </script>
+      
+   </body>
+</html>

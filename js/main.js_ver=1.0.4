@@ -1,0 +1,95 @@
+/* ========================================================================
+ * DOM-based Routing
+ * Based on http://goo.gl/EUTi53 by Paul Irish
+ *
+ * Only fires on body classes that match. If a body class contains a dash,
+ * replace the dash with an underscore when adding it to the object below.
+ *
+ * .noConflict()
+ * The routing is enclosed within an anonymous function so that you can 
+ * always reference jQuery with $, even when in .noConflict() mode.
+ *
+ * Google CDN, Latest jQuery
+ * To use the default WordPress version of jQuery, go to lib/config.php and
+ * remove or comment out: add_theme_support('jquery-cdn');
+ * ======================================================================== */
+
+// Custom Slider Controls
+
+$('.slider-control a').click(function(){
+    var owl = $(".owl-carousel").data('owlCarousel');
+    if($(this).hasClass('right'))
+    {
+        owl.next();
+    }
+    else
+    {
+        owl.prev();
+    }
+    return false;
+});
+
+// Style Switcher Open/Close
+
+$('.style-switcher .toggler').click(function(){
+    if($(this).parent().hasClass('toggled')) {
+        $(this).parent().removeClass('toggled');
+    }
+    else {
+        $(this).parent().addClass('toggled');
+    }
+});
+
+// Init
+    $(document).ready(function(){
+        var parts = $('.current-color').css('background-color').match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
+        delete(parts[0]);
+        for (var i = 1; i <= 3; ++i) {
+            parts[i] = parseInt(parts[i]).toString(16);
+            if (parts[i].length == 1) parts[i] = '0' + parts[i];
+        }
+        color = '#' + parts.join('');
+        $('.current-color').val(color);
+
+        //Isotope Filter
+        try{
+            var container = $('#isotope-items').isotope({
+                itemSelector: '.item',
+                layoutMode: 'masonry'
+            });
+            // filter items on button click
+            $('#isotope-filter').on( 'click', 'button', function() {
+              var filterValue = $(this).attr('data-filter');
+              container.isotope({ filter: filterValue });
+            });
+        }catch(ex){}
+            
+            try{
+            $('#testimonial-slider').owlCarousel({
+                items: 3,
+                singleItem: true,
+                pagination: false,
+                navigation: false,
+                autoHeight: true
+             });
+        }catch(ex){}
+
+
+        // Slide and Push Menus / Right Mobile Menu  [http://tympanus.net/codrops/2013/04/17/slide-and-push-menus/]
+        var $navbarFixed = $('.navbar-fixed-top'), $menuMain = $('header nav[role="navigation"]'), $menuMobileRight = $('#cbp-spmenu-s2');
+        $('#cbp-spmenu-s2').html( '<h3>' + $menuMobileRight.data('title') + '</h3>' + "\n" + $menuMain.html() );
+        $('#showRightPush').click( function (event) {
+            var $button = $(this);
+            event.preventDefault();
+            $button.toggleClass('active');
+            if ( $button.hasClass('active') ) {
+                $button.find('i').removeClass('klico-sidebar').addClass('klico-close');
+            }
+            else {
+                $button.find('i').removeClass('klico-close').addClass('klico-sidebar');
+            }
+            $(document.body).toggleClass('cbp-spmenu-push-toleft');
+            $navbarFixed.toggleClass('cbp-spmenu-push-toleft');
+            $('#cbp-spmenu-s2').toggleClass('cbp-spmenu-open');
+        });
+    });
